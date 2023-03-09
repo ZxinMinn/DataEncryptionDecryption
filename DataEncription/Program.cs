@@ -15,13 +15,13 @@ namespace DataEncription
         static void Main(string[] args)
         {
             string decryptedData = string.Empty;
-            string key = "b14ca5898a4e4133bbce2ea2315a1916";
+            string key = "";
             string password = Console.ReadLine();
-            byte[] data = DataEnctyptionService.EnctyptWithAes(key,password);
+            string data = DataEnctyptionService.EnctyptWithAes(key,password);
             // StoreBase64StringInDatabase
-            Console.WriteLine(Convert.ToBase64String(data));
+            Console.WriteLine(data);
             //
-            if (data != null)
+            if (!string.IsNullOrEmpty(data))
             {
                 decryptedData = DataEnctyptionService.DecryptwithAes(key, data);
                 Console.WriteLine(decryptedData);
