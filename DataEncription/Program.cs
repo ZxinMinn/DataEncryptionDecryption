@@ -43,6 +43,12 @@ namespace DataEncription
             string decryptedText = RSAEncryptionDecryptionManager.DecryptWithRSA(encryptedText, decParameters);
             Console.WriteLine(decryptedText);
             #endregion
+
+            #region SHA_256 Hashing
+            string text = "This is SHA_256 has algorithm";
+            string shaBase64Str = SHA_256EncryptionManager.EnctyptWithSHA_256(text);
+            Console.WriteLine(shaBase64Str);
+            #endregion
         }
     }
     
