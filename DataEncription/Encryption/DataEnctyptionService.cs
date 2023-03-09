@@ -71,6 +71,7 @@ namespace DataEncription.Encryption
 
                                 data = data.Replace("\0", string.Empty).
                                                    Replace("\b", string.Empty).
+                                                   Replace("\f", string.Empty).
                                                    Replace("\v", string.Empty).
                                                    Replace("\t", string.Empty).
                                                    Replace("\u0010", string.Empty).

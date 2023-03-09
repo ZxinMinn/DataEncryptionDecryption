@@ -96,6 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Encryption\DataEnctyptionService.cs" />
+    <Compile Include="Encryption\RSAEncryptionDecryptionManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\Logger.cs" />
