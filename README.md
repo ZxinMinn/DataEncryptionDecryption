@@ -1,4 +1,4 @@
-# Data Encryption and Decription with C#
+# Data Encryption and Decryption with C#
 
 # Advanced Encryption Standard (AES) algorithm
     Symmetric Encryption: This method uses the same key for encryption and decryption
